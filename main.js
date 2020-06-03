@@ -53,6 +53,11 @@ router.get("/product.jpg", (req, res) => {
   utils.getFile("public/images/product.jpg", res);
 });
 
+router.get("/product.jpg", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.jpg);
+  utils.getFile("public/images/product.jpg", res);
+});
+
 router.get("/confetti_cuisine.css", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.css);
   utils.getFile("public/css/confetti_cuisine.css", res);
@@ -61,6 +66,11 @@ router.get("/confetti_cuisine.css", (req, res) => {
 router.get("/bootstrap.css", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.css);
   utils.getFile("public/css/bootstrap.css", res);
+});
+
+router.get("/mystyle.css", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.css);
+  utils.getFile("public/css/mystle.css", res);
 });
 
 router.get("/confetti_cuisine.js", (req, res) => {
