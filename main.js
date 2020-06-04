@@ -28,6 +28,26 @@ router.get("/belle.html", (req, res) => {
   utils.getFile("views/belle.html", res);
 });
 
+router.get("/adam.html", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.html);
+  utils.getFile("views/adam.html", res);
+});
+
+router.get("/kayla.html", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.html);
+  utils.getFile("views/kayla.html", res);
+});
+
+router.get("/aboutJoseph.html", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.html);
+  utils.getFile("views/aboutJoseph.html", res);
+});
+
+router.get("/Jiale.html", (req, res) => {
+  res.writeHead(httpStatus.OK, contentTypes.html);
+  utils.getFile("views/Jiale.html", res);
+});
+
 router.get("/contact.html", (req, res) => {
   res.writeHead(httpStatus.OK, contentTypes.html);
   utils.getFile("views/contact.html", res);
